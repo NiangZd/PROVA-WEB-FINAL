@@ -1,0 +1,31 @@
+.logout-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333333;
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 60px;
+    height: 100vh;
+  }
+  
+  h2 {
+    color: #FFA500;
+    margin-bottom: 20px;
+  }
+  
+  .logout-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFA500;
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-link:hover {
+    background-color: #ff8c00;
+  }
+  

@@ -1,0 +1,16 @@
+<div class="background">
+  <div class="login-container">
+    <h1>GYM-DEVS</h1>
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label for="email">E-mail:</label>
+      <input id="email" type="email" formControlName="email" placeholder="Digite seu email" required>
+      <br>
+      <label for="password">Senha:</label>
+      <input id="password" type="password" formControlName="password" placeholder="Digite sua senha" required>
+      <br>
+      <button type="submit">Login</button>
+    </form>
+    <a href="/register" class="register-link">Não tem conta? Registre-se</a>
+  </div>
+</div>

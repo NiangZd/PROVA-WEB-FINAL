@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.student-page {
+  background-color: #2c2c2c;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.workout-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.workout-table th, .workout-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: center;
+}
+
+.workout-table th {
+  background-color: #333;
+}
+
+.workout-table tr:nth-child(even) {
+  background-color: #3a3a3a;
+}
+
+.workout-table tr:nth-child(odd) {
+  background-color: #2c2c2c;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px 0;
+  background-color: #3a3a3a;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.info-item {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.info-item h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  font-size: 1em;
+  margin: 0;
+}

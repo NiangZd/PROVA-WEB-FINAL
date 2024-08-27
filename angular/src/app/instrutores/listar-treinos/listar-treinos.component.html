@@ -1,0 +1,59 @@
+<app-navbar-ins></app-navbar-ins>
+<div class="container">
+    <h2>Listar Treinos</h2>
+    <table class="treinos-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Objetivo</th>
+                <th>Instrutor</th>
+                <th>Data de Criação</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Fortalecimento Muscular</td>
+                <td>João da Silva</td>
+                <td>22 de agosto de 2024</td>
+                <td class="action-buttons">
+                    <button (click)="openModal('1')">Ver</button>
+                    <a routerLink="/editar-treino">Editar</a>
+                    <a routerLink="/deletar-treino/1">Deletar</a>
+                </td>
+            </tr>
+            <!-- Repetir para mais treinos -->
+        </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" (click)="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Detalhes do Treino</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>Instrutor:</strong> João da Silva</p>
+                <p><strong>Objetivo do Treino:</strong> Fortalecimento e hipertrofia muscular</p>
+                <p><strong>Data da Criação:</strong> 22 de agosto de 2024</p>
+                <table class="treinos-table">
+                    <thead>
+                        <tr>
+                            <th>Exercício</th>
+                            <th>Descrição</th>
+                            <th>Repetições</th>
+                            <th>Carga</th>
+                            <th>Tipo do Set</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Adicionar linhas com dados reais -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer-ins></app-footer-ins>

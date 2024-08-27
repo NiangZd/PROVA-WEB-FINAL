@@ -1,0 +1,31 @@
+<div class="ver-dados-page">
+  <app-navbar></app-navbar>
+  <div class="main-content">
+    <h1>Ver Dados</h1>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="data-form">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input id="name" type="text" formControlName="name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" />
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input id="password" type="password" formControlName="password" />
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Data de Nascimento</label>
+        <input id="birthdate" type="text" [value]="userData?.data_nascimento | date:'yyyy-MM-dd'" disabled />
+      </div>
+      <div class="form-group">
+        <label for="enrollment-date">Data da Matrícula</label>
+        <input id="enrollment-date" type="text" [value]="userData?.data_matricula | date:'dd MMMM yyyy'" disabled />
+      </div>
+      <button type="submit">Salvar Alterações</button>
+      <button type="button" (click)="onDelete()">Excluir Conta</button> <!-- Adiciona o botão de exclusão -->
+    </form>
+  </div>
+  <app-footer></app-footer>
+</div>

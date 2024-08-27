@@ -1,0 +1,29 @@
+<div class="background">
+    <div class="register-container">
+      <h1>GYM-DEVS</h1>
+      <h2>Registro</h2>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <label for="name">Nome:</label>
+        <input id="name" type="text" formControlName="name" placeholder="Digite seu nome" required>
+        <br>
+        <label for="dob">Data de Nascimento:</label>
+        <input id="dob" type="date" formControlName="dob" required>
+        <br>
+        <label for="email">E-mail:</label>
+        <input id="email" type="email" formControlName="email" placeholder="Digite seu e-mail" required>
+        <br>
+        <label for="password">Senha:</label>
+        <input id="password" type="password" formControlName="password" placeholder="Digite sua senha" required>
+        <br>
+        <label for="confirmPassword">Repetir Senha:</label>
+        <input id="confirmPassword" type="password" formControlName="confirmPassword" placeholder="Repita sua senha" required>
+        <br>
+        <label for="token">Para instrutores:</label>
+        <input id="token" type="text" formControlName="token" placeholder="Digite seu token">
+        <br>
+        <button type="submit">Registrar</button>
+        <a href="/" class="login-link">Já tem conta? Faça login</a>
+      </form>
+    </div>
+  </div>
+  

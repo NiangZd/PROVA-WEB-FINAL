@@ -1,0 +1,16 @@
+<div class="instrutores-page">
+  <app-navbar-ins></app-navbar-ins>
+  <div class="main-content">
+    <div class="button-container">
+      <h1 style="text-align: center;">Olá, {{ name }}</h1>
+      <a class="button register-link" href="/adicionar-treino">Adicionar Treino</a>
+      <a class="button register-link" href="/listar-treinos">Ver Treinos</a>
+      <a class="button register-link" href="/gerenciar-alunos">Gerenciar Alunos</a>
+    </div>
+    
+    <div *ngIf="usuarioId && name">
+      
+    </div>
+  </div>
+  <app-footer-ins></app-footer-ins>
+</div>

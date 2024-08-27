@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999999;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  

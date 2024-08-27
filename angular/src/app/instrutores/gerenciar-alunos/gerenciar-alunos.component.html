@@ -1,0 +1,58 @@
+<app-navbar-ins></app-navbar-ins>
+<div class="container">
+    <h2>Gerenciar Alunos</h2>
+    <table class="alunos-table">
+        <thead>
+            <tr>
+                <th>ID do aluno</th>
+                <th>ID do Treino</th>
+                <th>Nome</th>
+                <th>Data de Inscrição</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>Maria Oliveira</td>
+                <td>15 de junho de 2023</td>
+                <td class="action-buttons">
+                    <button (click)="openModal('1')">Ver</button>
+                    <a routerLink="/deletar-aluno/1">Deletar</a>
+                </td>
+            </tr>
+            <!-- Repetir para mais alunos -->
+        </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" (click)="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Detalhes do Aluno</h2>
+            </div>
+            <div class="modal-body">
+                <p><strong>Nome:</strong> Maria Oliveira</p>
+                <p><strong>Data de Inscrição:</strong> 15 de junho de 2023</p>
+                <p><strong>ID do Treino:</strong> 1</p>
+                <table class="alunos-table">
+                    <thead>
+                        <tr>
+                            <th>Exercício</th>
+                            <th>Descrição</th>
+                            <th>Repetições</th>
+                            <th>Carga</th>
+                            <th>Tipo do Set</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Adicionar linhas com dados reais -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer-ins></app-footer-ins>

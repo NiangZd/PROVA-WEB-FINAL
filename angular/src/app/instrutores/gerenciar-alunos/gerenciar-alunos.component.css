@@ -1,0 +1,80 @@
+.container {
+    background-color: #3f3f3f;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100;
+    height: 100vh;
+}
+h2 {
+    text-align: center;
+    color: #FFA500;
+}
+.alunos-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.alunos-table, .alunos-table th, .alunos-table td {
+    border: 1px solid #666;
+}
+.alunos-table th {
+    background-color: #444;
+    color: #FFA500;
+    padding: 10px;
+}
+.alunos-table td {
+    background-color: #555;
+    color: #fff; /* Adicionado para garantir que o texto contraste com o fundo */
+    padding: 10px;
+}
+.action-buttons button, .action-buttons a {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.action-buttons button:hover, .action-buttons a:hover {
+    background-color: #ff8c00;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Escurece o fundo do modal */
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #333;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header h2 {
+    margin: 0;
+    color: #FFA500;
+}
+.modal-body p {
+    margin: 10px 0;
+    color: #fff; /* Adicionado para garantir que o texto contraste com o fundo */
+}
